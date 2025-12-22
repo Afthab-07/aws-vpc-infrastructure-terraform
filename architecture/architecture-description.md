@@ -1,7 +1,7 @@
 # AWS Highly Available VPC Architecture - Detailed Description
 
 ## Overview
-This architecture demonstrates a production-grade, highly available network infrastructure on AWS spanning two Availability Zones (AZs). It implements industry best practices for security, scalability, and fault tolerance.
+This is a hands-on learning project that implements a highly available 3-tier web application architecture on AWS across two Availability Zones. Built with Terraform to practice infrastructure as code and cloud networking concepts.
 
 ## Architecture Components
 
