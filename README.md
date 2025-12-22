@@ -11,7 +11,7 @@ This project demonstrates how to build secure and scalable cloud infrastructure 
 - **Subnets**: Public and private subnets for high availability
 - **ALB**: Application Load Balancer for traffic distribution
 - **EC2**: Auto Scaling Group for scalable web servers
-- - **RDS Database**: Multi-AZ MySQL database for data persistence
+- **RDS Database**: Multi-AZ MySQL database for data persistence
 - **Bastion Host**: Secure SSH access to private instances
 - **Security**: Security Groups and NACLs for least-privilege access
 - **Monitoring**: CloudWatch logs and metrics for observability
