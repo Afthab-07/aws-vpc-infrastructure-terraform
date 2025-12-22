@@ -1,4 +1,4 @@
-# AWS VPC Project - Version 1 (Simple Setup)
+# AWS VPC Project 
 # Basic infrastructure with load balancer and web servers
 
 provider "aws" {
