@@ -58,6 +58,18 @@ resource "aws_route_table_association" "public" {
   route_table_id = aws_route_table.public.id
 }
 
+# Private Subnets (2 AZs) - for RDS database
+resource "aws_subnet" "private" {
+  count = 2
+  vpc_id = aws_vpc.main.id
+  cidr_block = var.private_subnets[count.index]
+  availability_zone = data.aws_availability_zones.available.names[count.index]
+  
+  tags = {
+    Name = "${var.project_name}-private-subnet-${count.index + 1}"
+  }
+}
+
 # Security Group for ALB
 resource "aws_security_group" "alb" {
   name        = "${var.project_name}-alb-sg"
